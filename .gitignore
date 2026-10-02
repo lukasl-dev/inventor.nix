@@ -7,3 +7,15 @@ result-*
 
 # Ignore NixOS interactive test driver history
 **/.nixos-test-history
+
+# Python bytecode and local quality-check caches
+__pycache__/
+.mypy_cache/
+.ruff_cache/
+
+# Proprietary installation media and mutable Wine state are never repository inputs
+media/
+prefix/
+*.exe
+*.msi
+*.7z
